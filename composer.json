@@ -9,5 +9,12 @@
             "samco\\aadharkhosla\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "samco\\aadharkhosla\\EsignPackageServiceProvider"
+            ]
+        }
+    }
     "require": {}
 }

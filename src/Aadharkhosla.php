@@ -1,7 +1,7 @@
 <?php
 
 namespace Samco\Aadharkhosla;
-use App\Models\ESignVendorsMaster;
+use Samco\Aadharkhosla\Models\ESignVendorsMaster;
 
 class Aadharkhosla{
 	/* Function to upload a file to KHOSLA LABS and get the response either SUCCESS/FAILS.
