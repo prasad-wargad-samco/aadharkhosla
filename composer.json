@@ -1,0 +1,13 @@
+{
+    "name": "samco/aadharkhosla",
+    "description": "eSign functionality provided by 3rd party vendor Khosla Labs",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "samco\\aadharkhosla\\": "src/"
+        }
+    },
+    "require": {}
+}
