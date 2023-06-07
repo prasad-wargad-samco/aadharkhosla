@@ -125,12 +125,7 @@ class Aadharkhosla{
 		$err_msg = array();             // err_msg stores list of errors found during execution
 
 		$hash = $input_arr['id'] .'|'. $this->KHOSLA_APIKEY;
-		if(strtolower($this->APP_ENV) == 'production'){
-			$hash = hash("sha256", $hash);
-		}
-		else{
-			$hash = "12345";
-		}
+		$hash = hash("sha256", $hash);
 		$url = $this->KHOSLA_DOMAIN .'/esign/_downloadDocument';
 		$data = json_encode(array('id' => $input_arr['id'], 'hash' => $hash));
 		/*
